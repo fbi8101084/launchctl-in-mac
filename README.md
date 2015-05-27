@@ -65,22 +65,22 @@ lanuchctl 的工作流程是：
 ### a. 建立腳本
 首先在 plist 資料夾內建立一個文字檔案命名為 `com.exampl.hello.plist`，內容輸入如下：
 <pre>
-`<?xml version="1.0" encoding="UTF-8"?>`
-`<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">`
-`<plist version="1.0">`
-    `<dict>`
-        `<key>`Label`</key>`
-        `<string>`com.exampl.hello`</string>`
-        `<key>`ProgramArguments`</key>`
-        `<array>`
-            `<string>`<絕對路徑>/launchctl-in-mac/bin/hello.sh`</string>`
-        `</array>`
-        `<key>`StartInterval`</key>`
-        `<integer>`10`</integer>`
-        `<key>`RunAtLoad`</key>`
-        `<true/>`
-    `</dict>`
-`</plist>`
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Label&lt;/key&gt;
+        &lt;string&gt;com.exampl.hello&lt;/string&gt;
+        &lt;key&gt;ProgramArguments&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;<絕對路徑>/launchctl-in-mac/bin/hello.sh&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;StartInterval&lt;/key&gt;
+        &lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;RunAtLoad&lt;/key&gt;
+        &lt;true/&gt;
+    &lt;/dict&gt;
+&lt;/plist&gt;
 </pre>
 
 ###### 注意：上面的 <絕對路徑> 會依照個人的電腦而有所不同，請使用 `pwd` 指令來確認目前你的資料夾所在位置。
