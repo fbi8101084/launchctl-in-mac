@@ -1,1 +1,1 @@
-date +'%Y/%m/%d %H:%M' >> /tmp/helloExample.log
+date +'%Y/%m/%d %H:%M:%S' >> /tmp/helloExample.log
